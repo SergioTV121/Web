@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./generalAlumno.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./JavaScript/validetta/dist/validetta.min.css">
+    <script src="./JavaScript/jquery.js"></script>     
+    <script src="./JavaScript/validetta/dist/validetta.min.js"></script>
+    <script src="./JavaScript/validetta/localization/validettaLang-es-ES.js"></script>
+    <script src="./JavaScript/agregarDirectorExterno.js"></script>
+    <title>Nuevo Director</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    <div id="particles-js"></div>  
+    <div id="bloque">
+    <header class="contenedor header">
+    <h1 id="titulo_h">Ingrese los datos de su director</h1>
+    <form id="agregar">
+        <label for="id">ID:</label><input type="number" id="id" name="id" placeholder="Ingrese el ID" data-validetta="required"><br>
+        <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" placeholder="Ingrese el Nombre" data-validetta="required"><br>
+        <label for="p_ap">Primer Apellido:</label><input type="text" id="p_ap" name="p_ap" placeholder="Ingrese el Primer Apellido" data-validetta="required"><br>
+        <label for="tel">Telefono:</label><input type="text" id="tel" name="tel" placeholder="Ingrese el Telefono" data-validetta="required"><br>
+        <label for="mail">Correo:</label><input type="text" id="mail" name="mail" placeholder="Ingrese el Correo" data-validetta="required"><br>
+        <label for="cv">CV:</label><input type="file" id="cv" name="cv" accept="application/pdf"><br>
+        <input type="submit" id="enviar" value="Aceptar">
+    </form>
+    <div id="regresar">
+        <a href="./menu.html">Regresar</a>
+    </div>
+    </header>
+    </div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/activar.js"></script> 
+</body>
+</html>

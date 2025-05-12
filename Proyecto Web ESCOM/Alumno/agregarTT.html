@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="./generalAlumno.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./JavaScript/validetta/dist/validetta.min.css">
+    <script src="./JavaScript/jquery.js"></script>     
+    <script src="./JavaScript/validetta/dist/validetta.min.js"></script>
+    <script src="./JavaScript/validetta/localization/validettaLang-es-ES.js"></script>
+    <script src="./JavaScript/agregarTT.js"></script>   
+    <title>Nuevo TT</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    <div id="particles-js"></div>  
+    <div id="bloque">
+    <header class="contenedor header">
+    <h1>Ingrese los datos del Trabajo Terminal</h1>
+    <form id="agregar">
+        Titulo del TT: <input type="text" name="titulo" placeholder="Ingrese un titulo para su TT" data-validetta="required">
+        <br>
+        Resumen: <textarea name="resumen" cols="40" rows="5" data-validetta="required"></textarea>       
+        <br>
+        Protocolo: <input type="file" id="protocolo" name="protocolo" accept="application/pdf">
+        <br>
+        <input type="submit" id="enviar" value="Siguiente">
+    </form>   
+    </header>
+    </div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/activar.js"></script>   
+</body>
+</html>

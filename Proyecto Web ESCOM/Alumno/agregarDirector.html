@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <link href="./generalAlumno.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./JavaScript/validetta/dist/validetta.min.css">
+    <script src="./JavaScript/jquery.js"></script>     
+    <script src="./JavaScript/validetta/dist/validetta.min.js"></script>
+    <script src="./JavaScript/validetta/localization/validettaLang-es-ES.js"></script>
+    <script src="./JavaScript/consultarProfesor.js"></script>   
+    <script src="./JavaScript/agregarDirector.js"></script>
+    <title>Nuevo Director</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    <div id="particles-js"></div>  
+    <div id="bloque">
+    <header class="contenedor header">
+    <h1 id="titulo_h">Ingrese el ID del Profesor</h1>
+    <form id="agregar">
+        <label for="number">ID:</label>
+        <input type="number" id="id_profesor" name="id" placeholder="Ingrese el ID" data-validetta="required"><br>
+        <input id="btnConsultar" type="submit"><br>
+    </form>
+    <div id="profesorExterno">
+        <a href="#"class="btn waves-effect waves ligth">Mi profesor no es de ESCOM</a>
+    </div>
+    <div id="regresar">
+        <a href="./menu.html">Regresar</a>
+    </div>
+    </header>
+    </div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/activar.js"></script> 
+</body>
+</html>

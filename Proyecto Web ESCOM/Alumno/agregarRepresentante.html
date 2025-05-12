@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <link href="./generalAlumno.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./JavaScript/validetta/dist/validetta.min.css">
+    <script src="./JavaScript/jquery.js"></script>     
+    <script src="./JavaScript/validetta/dist/validetta.min.js"></script>
+    <script src="./JavaScript/validetta/localization/validettaLang-es-ES.js"></script>
+    <script src="./JavaScript/agregarRepresentante.js"></script>   
+    <title>Nuevo Representante</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    <div id="particles-js"></div>  
+    <div id="bloque">
+    <header class="contenedor header">
+    <h1>Datos del Alumno</h1>
+    <form id="agregar">
+        Boleta: <input type="text" name="boleta" placeholder="Ingrese la Boleta" data-validetta="required"><br>
+        Nombre: <input type="text" name="nombre" placeholder="Ingrese el Nombre" data-validetta="required"><br>
+        Primer Apellido: <input type="text" name="p_apellido" placeholder="Ingrese el Primer Apellido" data-validetta="required"><br>
+        Segundo Apellido: <input type="text" name="s_apellido" placeholder="Ingrese el Segundo Apellido"><br>
+        Telefono: <input type="text" name="telefono" placeholder="Ingrese el Telefono" data-validetta="required"><br>
+        Correo: <input type="text" name="correo" placeholder="Ingrese el Correo" data-validetta="required"><br>
+        Contraseña: <input type="password" name="contrasena" placeholder="Ingrese una contraseña" data-validetta="required"><br>
+        Confirmar Contraseña: <input type="password" name="contrasena" placeholder="Vuelva a Ingresar la contraseña" data-validetta="equalTo[contrasena]"><br>
+        <input type="submit" value="Aceptar"><br>
+    </form>
+    </header>
+    </div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/activar.js"></script>  
+</body>
